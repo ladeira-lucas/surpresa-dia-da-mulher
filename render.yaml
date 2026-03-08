@@ -1,0 +1,11 @@
+﻿services:
+  - type: web
+    name: surpresa-dia-da-mulher
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SITE_TTL_DAYS
+        value: 5
+      - key: SITE_LAUNCH_DATE
+        sync: false
