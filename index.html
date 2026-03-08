@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Feliz Dia da Mulher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="glow glow-left"></div>
+  <div class="glow glow-right"></div>
+
+  <main class="container" id="content">
+    <section class="hero">
+      <p class="hero-tag">08 de Marco | Dia da Mulher</p>
+      <h1>Feliz Dia da Mulher, meu amor</h1>
+      <p class="hero-subtitle">Hoje e sempre, celebro sua forca, sua luz e o amor que voce espalha.</p>
+      <p class="signature">Com carinho, do seu amor</p>
+    </section>
+
+    <section class="card quote-card">
+      <p>Voce e a mulher mais incrivel que eu conheco. Obrigado por ser meu porto seguro, meu riso favorito e meu maior orgulho.</p>
+    </section>
+
+    <section class="card motivos-card">
+      <h2>4 motivos que me fazem te admirar ainda mais</h2>
+      <ul class="motivos">
+        <li>Seu sorriso ilumina qualquer lugar.</li>
+        <li>Sua coragem me inspira todos os dias.</li>
+        <li>Seu carinho faz eu me sentir em casa.</li>
+        <li>Com voce, cada momento vira memoria inesquecivel.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Nossa historia em 11 momentos</h2>
+      <div class="gallery">
+        <article class="photo-card"><img src="static/images/1.jpeg" alt="Aldeia e Polaroide"><div class="photo-text"><h3>1. Aldeia e Polaroide</h3><p>Nesse dia na aldeia, a polaroide guardou mais que uma foto: guardou o comeco de uma memoria que sempre me faz sorrir.</p></div></article>
+        <article class="photo-card"><img src="static/images/2.jpeg" alt="Primeiro encontro especial"><div class="photo-text"><h3>2. Primeiro encontro especial</h3><p>Nosso primeiro jantar mais chique, com massa na mesa e aquele friozinho bom de quem ja sentia que estava vivendo algo raro.</p></div></article>
+        <article class="photo-card"><img src="static/images/3.jpg" alt="No barco, rumo a aventura"><div class="photo-text"><h3>3. No barco, rumo a aventura</h3><p>No meio do rio, eu olhava a paisagem e pensava que a melhor vista era voce do meu lado, rindo comigo.</p></div></article>
+        <article class="photo-card"><img src="static/images/4.jpeg" alt="Aniversario da sua amiga"><div class="photo-text"><h3>4. Aniversario da sua amiga</h3><p>No aniversario da sua amiga, a gente estava tao em sintonia que parecia cena de filme: leve, bonita e nossa.</p></div></article>
+        <article class="photo-card"><img src="static/images/5.jpeg" alt="Seu aniversario"><div class="photo-text"><h3>5. Seu aniversario</h3><p>No seu aniversario, eu so conseguia agradecer por existir uma mulher tao forte, doce e incrivel como voce.</p></div></article>
+        <article class="photo-card"><img src="static/images/6.jpeg" alt="Shopping e risadas"><div class="photo-text"><h3>6. Shopping e risadas</h3><p>No shopping, brincando com oculos da loja e provando que os melhores momentos sao os espontaneos que a gente inventa juntos.</p></div></article>
+        <article class="photo-card"><img src="static/images/7.jpeg" alt="Porao do Alemao"><div class="photo-text"><h3>7. Porao do Alemao</h3><p>A caminho do Porao do Alemao, com clima de rock e coracao tranquilo, porque qualquer role com voce ja vira lembranca favorita.</p></div></article>
+        <article class="photo-card"><img src="static/images/8.jpeg" alt="Nosso momento aleatorio"><div class="photo-text"><h3>8. Nosso momento aleatorio</h3><p>Essa foto sem roteiro e a nossa cara: simples, verdadeira e cheia daquele carinho que aparece ate no silencio.</p></div></article>
+        <article class="photo-card"><img src="static/images/9.jpeg" alt="Partiu pagode"><div class="photo-text"><h3>9. Partiu pagode</h3><p>Indo pro pagode, com sorriso no rosto e a certeza de que a melhor parte da noite sempre e dividir tudo com voce.</p></div></article>
+        <article class="photo-card"><img src="static/images/10.jpeg" alt="Nosso Natal"><div class="photo-text"><h3>10. Nosso Natal</h3><p>No Natal, entre luzes e abracos, eu senti de novo que meu presente preferido e construir uma vida ao seu lado.</p></div></article>
+        <article class="photo-card"><img src="static/images/11.jpeg" alt="Dia dos Namorados"><div class="photo-text"><h3>11. Dia dos Namorados</h3><p>Na nossa comemoracao de Dia dos Namorados, o amor estava no olhar, no toque e no jeito que a gente se escolhe todos os dias.</p></div></article>
+      </div>
+    </section>
+
+    <section class="card final-message">
+      <p>Feliz Dia da Mulher, minha princesa. Que eu sempre saiba te amar, te cuidar e te fazer sorrir.</p>
+    </section>
+  </main>
+
+  <main class="container" id="expired" style="display:none;">
+    <section class="card" style="text-align:center;">
+      <h2>Essa surpresa foi encerrada com carinho</h2>
+      <p>Este link ficou disponivel por tempo limitado e foi finalizado.</p>
+      <p id="expiresInfo"></p>
+    </section>
+  </main>
+
+  <script>
+    // Ajuste aqui a data de publicacao no formato YYYY-MM-DD.
+    const SITE_LAUNCH_DATE = "2026-03-08";
+    const SITE_TTL_DAYS = 5;
+
+    function toDateOnly(value) {
+      const [y, m, d] = value.split("-").map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    const launchDate = toDateOnly(SITE_LAUNCH_DATE);
+    const expiresDate = new Date(launchDate);
+    expiresDate.setDate(expiresDate.getDate() + SITE_TTL_DAYS - 1);
+
+    const today = new Date();
+    const todayOnly = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
+    if (todayOnly > expiresDate) {
+      document.getElementById("content").style.display = "none";
+      document.getElementById("expired").style.display = "grid";
+      document.getElementById("expiresInfo").textContent =
+        "Encerramento automatico em: " + expiresDate.toLocaleDateString("pt-BR") + ".";
+    }
+  </script>
+</body>
+</html>
